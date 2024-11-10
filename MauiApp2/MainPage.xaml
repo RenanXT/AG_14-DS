@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.MainPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="Gray" Offset="0.0" />
+            <GradientStop Color="White" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <VerticalStackLayout VerticalOptions="FillAndExpand">
+
+        <Frame VerticalOptions="Center" 
+               Padding="10"
+               BackgroundColor="Black"
+               BorderColor="RoyalBlue">
+            <Frame VerticalOptions="Center" Padding="10"
+                   BackgroundColor="Transparent"
+                   BorderColor="Transparent">
+                <Grid ColumnDefinitions="*,*,*"
+                      BackgroundColor="Transparent">
+                    <Button Text="Cadastro" Grid.Column="0" Margin="10" Clicked="Button_Clicked_2" />
+                    <Button Text="Reservar quarto" Grid.Column="1" Margin="10" Clicked="Button_Clicked_1" />
+                    <Button Text="Sobre" Grid.Column="2" Margin="10" Clicked="Button_Clicked" />
+                </Grid>
+            </Frame>
+        </Frame>
+
+
+        <VerticalStackLayout>
+            <Label Text="Bem-Vindo ao AppHotel!"
+                   HorizontalOptions="Center"
+                   FontSize="40"
+                   FontFamily="Kalam"></Label>
+            <Label Text="Com o AppHotel você se organiza para ter uma estadia confortável e prática no centro da cidade, com facil acesso a pontos turisticos áreas de negócios e opções de lazer, tornando a sua estadia ainda mais conveniente.
+Nossas suítes são modernas e aconchegantes ou mais simples e de baixo custo ideias para todos os gostos e perfeitas para descansar após um dia de passeios ou compromissos. Com Wi-Fi de alta velocidade, café da manhã completo e serviço de concierge."
+        HorizontalOptions="Center"
+        FontFamily="Kalam"></Label>
+
+            
+            </VerticalStackLayout>
+        <Image Source="frente.jpg" 
+               HorizontalOptions="Fill"
+               HeightRequest="300" />
+        
+        <Image Source="quartos.jpg"
+               Margin="10"
+               HorizontalOptions="Fill"
+               HeightRequest="400"/>
+        
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Image Source="icone.jpg"
+                   HeightRequest="100"/>
+           
+        </HorizontalStackLayout >
+        <Label Text="Facebook: facebook.com/AppHotelFicticio" HorizontalOptions="Center"/>
+        <Label Text="Instagram: instagram.com/AppHotelFicticio" HorizontalOptions="Center"/>
+        <Label Text="Twitter: twitter.com/AppHotelFicticio" HorizontalOptions="Center"/>
+        <Label Text="WhatsApp: +55 11 91234-5678" HorizontalOptions="Center"/>
+
+        <!-- <Label HorizontalOptions="Center" 
+           Text="Sobre o AppHotel" 
+           FontFamily="KalamRegular"
+           FontSize="40"
+           Padding="10" />
+        <Label Text="O AppHotel oferece a contratação de acomodações para uma ou mais pessoas, permitindo que os hóspedes desfrutem de conforto e praticidade durante sua estadia. O cálculo do custo é baseado no período e na suíte escolhida, garantindo transparência e flexibilidade."
+           HorizontalOptions="Center"
+           FontFamily="KalamRegular" />
+        <Label Text="Desenvolvido por: RENAN BARROS MENDEL DE PAULA."
+           FontFamily="KalamRegular"
+           Margin="10" />
+        <Label Text="Data do Desenvolvimento: 03/11/2024"
+           FontFamily="KalamRegular" /> -->
+    </VerticalStackLayout>
+
+</ContentPage>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.NovaPasta1.Sobre"
+          
+              NavigationPage.HasNavigationBar="False"
+             BackgroundColor="White">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="Gray" Offset="0.0" />
+            <GradientStop Color="White" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <VerticalStackLayout VerticalOptions="Center">
+        <Frame
+            BorderColor="RoyalBlue"
+            Padding="10"
+            Margin="10"
+            BackgroundColor="black">
+            <VerticalStackLayout>
+                <Image Source="logo_hotel.jpg" />
+                <Label HorizontalOptions="Center" 
+                       Text="Sobre o AppHotel" 
+                        FontFamily="KalamRegular"
+                       FontSize="40"
+                       Padding="10"/>
+                
+                <Label Text="O AppHotel oferece a contratação de acomodações para uma ou mais pessoas, permitindo que os hóspedes desfrutem de conforto e praticidade durante sua estadia. O cálculo do custo é baseado no período e na suíte escolhida, garantindo transparência e flexibilidade."
+                       HorizontalOptions="Center"
+                        FontFamily="KalamRegular"
+                       ></Label>
+                <Label Text="Desenvolvido por: RENAN BARROS MENDEL DE PAULA."
+                        FontFamily="KalamRegular"
+                       Margin="10"></Label>
+                <Label Text="Data do Desenvolvimento: 03/11/2024"
+                        FontFamily="KalamRegular"></Label>
+                
+            </VerticalStackLayout>
+            
+            
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>
